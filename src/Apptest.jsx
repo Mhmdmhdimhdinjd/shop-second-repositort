@@ -1,27 +1,35 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter as Router , Route , Routes} from 'react-router-dom';
-
-
-const Apptest = () => {
-
-
-  return(
-
-<Router>
-
-    <Navbar/>
-
-<Routes>
 
 
 
-</Routes>
+const Apptest = () =>{
 
-</Router>
 
-  )
-}
 
+
+
+
+
+    return(
+
+        <>
+        
+        <Router>
+
+            <Navbar />
+
+            <Routes>
+
+
+
+
+            </Routes>
+
+        </Router>
+
+        </>
+)}
 
 export default Apptest
