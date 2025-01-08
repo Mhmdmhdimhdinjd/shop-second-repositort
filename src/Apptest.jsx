@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Slider from "./components/Slider/Slider";
 import Intro from "./components/Inro/introcontainer";
 // import { Provider } from "react-redux";
-
+import Footer from "./components/Footer/Footercontaier";
+import './styles/style.css'
 
 const Apptest = () =>{
 
@@ -27,6 +28,8 @@ const Apptest = () =>{
             <Slider/>
 
             <Intro/>
+
+            <Footer/>
 
             <Routes>
 
