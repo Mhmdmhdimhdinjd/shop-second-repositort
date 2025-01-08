@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button, Card, CardMedia, CardContent, Typography } from '@mui/material';
 import './ProductSlide.css'
 import { SwiperSlide } from "swiper/react";
+//import { addItem } from '../redux/reducers/CartReducer';
 // import { useDispatch } from 'react-redux';
 
 
