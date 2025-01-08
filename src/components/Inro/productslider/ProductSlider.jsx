@@ -56,7 +56,7 @@ const ProductSlider = ({ Products }) => {
                     <CardContent
                         sx={{ px: 2, py: 2, flex: '1 0 auto', height: 140 }}>
                         <Link to={`/ninishop2/product/${product.id}`} style={{ textDecoration: 'none' }}>
-                            <Typography variant='p' component="div" sx={{ fontWeight: 'bold', mb: 1 }}>
+                            <Typography variant='p' component="div" sx={{ fontWeight: 'bold', mb: 1 , color:'black' }}>
     
                                 {product.title.split(' ').length > 6 ?
                                     `${product.title.split(' ').slice(0, 6).join(' ')}...` :
