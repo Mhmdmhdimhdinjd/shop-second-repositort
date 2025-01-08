@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Grid } from "swiper/modules";
-import Product from "../product/product";
+import React from "react";
+import Grid from '@mui/material/Grid';
 
 
 
-const ProductGrid = ({ products }) => {
+const ProductGrid = ({ products , Product }) => {
 
 
     return (
