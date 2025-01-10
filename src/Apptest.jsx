@@ -33,12 +33,13 @@ const Apptest = () => {
 
                     <Routes>
 
+                        <Route path='/shop/' element={<Home />} />
 
-                        <Route path='/shop/Home' element={<PrivateRoute><Home/></PrivateRoute>} />
+                        <Route path='/shop/Home' element={<PrivateRoute><Home /></PrivateRoute>} />
 
-                        <Route path='/shop/login' element={<Login/>} />
+                        <Route path='/shop/login' element={<Login />} />
 
-                        <Route path='/shop/signup' element={<Signup/>} />
+                        <Route path='/shop/signup' element={<Signup />} />
 
                     </Routes>
 
