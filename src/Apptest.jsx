@@ -1,8 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import { Provider } from "react-redux";
+import { Provider } from "react-redux";
 import './styles/style.css'
 import Home from "./pages/Home/Home";
+import store from "./redux/store";
+import PrivateRoute from "./navigation/PrivateRoute";
+import Login from './components/auth/login/Login'
+import Signup from "./components/auth/signup/Signup";
+
 
 const Apptest = () => {
 
@@ -16,25 +21,30 @@ const Apptest = () => {
 
         <>
 
-            {/* <Provider> */}
+            <Provider store={store}>
 
-            <Router>
-
-
-
-                <Home />
+                <Router>
 
 
 
-                <Routes>
+                    {/* <Home /> */}
 
 
 
+                    <Routes>
 
-                </Routes>
+                        <Route path='/shop/' element={<Home />} />
 
-            </Router>
-            {/* </Provider> */}
+                        <Route path='/shop/Home' element={<PrivateRoute><Home /></PrivateRoute>} />
+
+                        <Route path='/shop/login' element={<Login />} />
+
+                        <Route path='/shop/signup' element={<Signup />} />
+
+                    </Routes>
+
+                </Router>
+            </Provider>
 
         </>
     )
