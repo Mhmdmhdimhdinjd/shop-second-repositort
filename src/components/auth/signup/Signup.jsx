@@ -24,9 +24,7 @@ const Signup = () => {
     const user = { username, password };
     dispatch(registerUser(user));
     navigate(redirectPath)
-    // < Navigate to={localStorage.getItem('userredirect')
-    // } />;
-    // localStorage.removeItem('userredirect')
+
   };
 
   return (

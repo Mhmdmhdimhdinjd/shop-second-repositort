@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { loginUser } from '/src/redux/reducers/AuthSlice';
 import { Navigate } from 'react-router-dom';
 import { Typography, Box, Button, TextField } from '@mui/material';
-import '../../../App.css'
+import '../../../styles/style.css'
 
 
 const Login = () => {
