@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base:'/shop-second-repositort/',
   build:{
-    outDir:'dist'
+    outDir:"dist"
   },
 })
