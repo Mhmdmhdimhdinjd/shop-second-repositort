@@ -34,7 +34,7 @@ const Apptest = () => {
 
                         <Route path="/shop/profile" element={<Profile/>}  />
 
-                        <Route path="/shop/products" element={<Products/>}/>
+                        <Route path="/shop/products" element={<PrivateRoute><Products/></PrivateRoute>}/>
 
                         <Route path="/shop/Shoppingbasket" element={<PrivateRoute><Shoppingbasket/></PrivateRoute>} />
 
