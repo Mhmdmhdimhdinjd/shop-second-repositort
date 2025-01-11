@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { loginUser } from '/src/redux/reducers/AuthSlice';
-import { Navigate } from 'react-router-dom';
-import { Typography, Box, Button, TextField } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { Typography,Button, TextField, Box } from '@mui/material';
 import '../../../styles/style.css'
 
 
@@ -14,7 +14,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const dispatch = useDispatch();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     let redirectPath = localStorage.getItem('userredirect');
@@ -22,11 +22,7 @@ const Login = () => {
 
     if (storedUser.username === username && storedUser.password === password) {
       dispatch(loginUser(storedUser));
-      <Navigate to={redirectPath} />;
-
-      // localStorage.removeItem('userredirect')
-      // redirectPath = null
-
+      navigate(redirectPath || '/shop/')
     } else {
       setError('نام کاربری یا رمز عبور نادرست است');
     }
@@ -34,7 +30,7 @@ const Login = () => {
 
   return (
     <Box
-      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', fontFamily: 'gandom' }}
+    sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '400px', fontFamily: 'gandom' }}
     >
       <Typography
         component="h1"
