@@ -5,9 +5,9 @@ import './styles/style.css'
 import Home from "./pages/Home/Home";
 import store from "./redux/store";
 import PrivateRoute from "./navigation/PrivateRoute";
-// import Profile from "/src/pages/profile/profile";
 import Products from "./pages/Products/products";
 import Shoppingbasket from "./pages/Shoppingbasket/ShoppingBasket";
+import Profile from "./pages/Profile/profile";
 
 
 const Apptest = () => {
@@ -32,7 +32,7 @@ const Apptest = () => {
 
                         <Route path='/shop/Home' element={<Home />} />
 
-                        {/* <Route path="/shop/profile" element={<Profile/>}  /> */}
+                        <Route path="/shop/profile" element={<Profile/>}  />
 
                         <Route path="/shop/products" element={<PrivateRoute><Products/></PrivateRoute>}/>
 
