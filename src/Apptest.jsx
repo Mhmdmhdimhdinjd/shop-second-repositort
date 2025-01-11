@@ -28,15 +28,15 @@ const Apptest = () => {
 
                     <Routes>
 
-                        <Route path='/shop/' element={<Home />} />
+                        <Route path='/shop-second-repositort/' element={<Home />} />
 
-                        <Route path='/shop/Home' element={<Home />} />
+                        <Route path='/shop-second-repositort/Home' element={<Home />} />
 
-                        <Route path="/shop/profile" element={<Profile/>}  />
+                        <Route path="/shop-second-repositort/profile" element={<Profile/>}  />
 
-                        <Route path="/shop/products" element={<PrivateRoute><Products/></PrivateRoute>}/>
+                        <Route path="/shop-second-repositort/products" element={<PrivateRoute><Products/></PrivateRoute>}/>
 
-                        <Route path="/shop/Shoppingbasket" element={<PrivateRoute><Shoppingbasket/></PrivateRoute>} />
+                        <Route path="/shop-second-repositort/Shoppingbasket" element={<PrivateRoute><Shoppingbasket/></PrivateRoute>} />
 
                     </Routes>
 

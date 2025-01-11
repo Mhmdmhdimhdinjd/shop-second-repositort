@@ -18,24 +18,24 @@ const Navbar = () => {
     <AppBar position="static" color="white">
       <Toolbar>
         <Box display="flex" flexGrow={1} alignItems="center" gap={2}>
-          <Link to="/shop/Shoppingbasket">
+          <Link to="/shop-second-repositort/Shoppingbasket">
             <IconButton color="inherit">
               <ShoppingBasketOutlinedIcon style={{color:'black'}}/>
             </IconButton>
           </Link>
-          <Link to="/shop/Profile">
+          <Link to="/shop-second-repositort/Profile">
             <IconButton color="inherit" onClick={() => localStorage.setItem('userredirect', location.pathname)}>
               <AccountCircleOutlinedIcon style={{color:'black'}}/>
             </IconButton>
           </Link>
-          <Link to="/shop/Products" style={{textDecoration:'none'}}>
+          <Link to="/shop-second-repositort/Products" style={{textDecoration:'none'}}>
             <Typography variant="body1" color="textPrimary" fontFamily={'gandom'} >
               محصولات
             </Typography>
           </Link>
         </Box>
         <Box>
-          <Link to="/shop/home">
+          <Link to="/shop-second-repositort/home">
             <img src={logo} alt="logo" style={{ width: 64 }} />
           </Link>
         </Box>
