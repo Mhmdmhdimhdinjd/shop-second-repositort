@@ -8,6 +8,7 @@ import PrivateRoute from "./navigation/PrivateRoute";
 import Login from './components/auth/login/Login'
 import Signup from "./components/auth/signup/Signup";
 import Profile from "./pages/profile/profile";
+import Products from "./pages/Products/products";
 
 
 const Apptest = () => {
@@ -26,12 +27,6 @@ const Apptest = () => {
 
                 <Router>
 
-
-
-                    {/* <Home /> */}
-
-
-
                     <Routes>
 
                         <Route path='/shop/' element={<Home />} />
@@ -39,6 +34,8 @@ const Apptest = () => {
                         <Route path='/shop/Home' element={<Home />} />
 
                         <Route path="/shop/profile" element={<Profile/>}  />
+
+                        <Route path="/shop/products" element={<Products/>}/>
 
                     </Routes>
 

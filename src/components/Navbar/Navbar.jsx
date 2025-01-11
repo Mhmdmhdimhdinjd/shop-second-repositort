@@ -28,14 +28,14 @@ const Navbar = () => {
               <AccountCircleOutlinedIcon style={{color:'black'}}/>
             </IconButton>
           </Link>
-          <Link to="/ninishop2/Products" style={{textDecoration:'none'}}>
+          <Link to="/shop/Products" style={{textDecoration:'none'}}>
             <Typography variant="body1" color="textPrimary" fontFamily={'gandom'} >
               محصولات
             </Typography>
           </Link>
         </Box>
         <Box>
-          <Link to="/ninishop2/home">
+          <Link to="/shop/home">
             <img src={logo} alt="logo" style={{ width: 64 }} />
           </Link>
         </Box>
