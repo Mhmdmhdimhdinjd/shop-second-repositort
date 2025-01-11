@@ -10,7 +10,7 @@ const PrivateRoute = ({ children }) => {
 
     const storeduser = useSelector((state) => state.auth.user);
     const logeduser = useSelector((state) => state.auth.logeduser);
-    localStorage.setItem('userredirect', JSON.stringify(location.pathname));
+    localStorage.setItem('userredirect',location.pathname);
     
     
     if (!storeduser) {

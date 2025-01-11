@@ -5,10 +5,9 @@ import './styles/style.css'
 import Home from "./pages/Home/Home";
 import store from "./redux/store";
 import PrivateRoute from "./navigation/PrivateRoute";
-import Login from './components/auth/login/Login'
-import Signup from "./components/auth/signup/Signup";
 import Profile from "./pages/profile/profile";
 import Products from "./pages/Products/products";
+import Shoppingbasket from "./pages/Shoppingbasket/ShoppingBasket";
 
 
 const Apptest = () => {
@@ -36,6 +35,8 @@ const Apptest = () => {
                         <Route path="/shop/profile" element={<Profile/>}  />
 
                         <Route path="/shop/products" element={<Products/>}/>
+
+                        <Route path="/shop/Shoppingbasket" element={<PrivateRoute><Shoppingbasket/></PrivateRoute>} />
 
                     </Routes>
 

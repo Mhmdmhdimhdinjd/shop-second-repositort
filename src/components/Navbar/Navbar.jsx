@@ -18,7 +18,7 @@ const Navbar = () => {
     <AppBar position="static" color="white">
       <Toolbar>
         <Box display="flex" flexGrow={1} alignItems="center" gap={2}>
-          <Link to="/ninishop2/Shoppingbasket">
+          <Link to="/shop/Shoppingbasket">
             <IconButton color="inherit">
               <ShoppingBasketOutlinedIcon style={{color:'black'}}/>
             </IconButton>
