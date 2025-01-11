@@ -8,6 +8,7 @@ import PrivateRoute from "./navigation/PrivateRoute";
 import Products from "./pages/Products/products";
 import Shoppingbasket from "./pages/Shoppingbasket/ShoppingBasket";
 import Profile from "./pages/Profile/profile";
+import ProductDetails from "./pages/productdetail/ProductDetails";
 
 
 const Apptest = () => {
@@ -37,6 +38,8 @@ const Apptest = () => {
                         <Route path="/shop-second-repositort/products" element={<PrivateRoute><Products/></PrivateRoute>}/>
 
                         <Route path="/shop-second-repositort/Shoppingbasket" element={<PrivateRoute><Shoppingbasket/></PrivateRoute>} />
+
+                        <Route path="/shop-second-repositort/product/:id" element={<ProductDetails />} />
 
                     </Routes>
 

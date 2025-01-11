@@ -1,8 +1,13 @@
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addItem } from '../redux/reducers/CartReducer';
+import { addItem } from '../../redux/reducers/CartReducer';
 import Productdetailcomponents from '../../components/productdetails/podectdetailcomponent';
+import { Paper, Box, Typography } from '@mui/material';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footercontaier';
+
 
 const ProductDetailscontainer = () => {
     const { id } = useParams();
@@ -32,15 +37,18 @@ const ProductDetailscontainer = () => {
 
         <>
 
-            <Paper elevation={3} style={{ borderRadius: '30px' }}>
+            <Navbar />
+
+            <Paper elevation={3} sx={{ borderRadius: '30px' , my:4 }}>
                 <Box p={4} color="gray">
                     <Typography>{product.category}</Typography>
                 </Box>
 
-                <Productdetailcomponents addToCart={addToCart} product={product}/>
+                <Productdetailcomponents addToCart={addToCart} product={product} />
 
             </Paper>
 
+            <Footer />
 
         </>
 

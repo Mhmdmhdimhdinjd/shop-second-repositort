@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, Grid, Typography, Box } from '@material-ui/core';
+import Grid from '@mui/material/Grid';
+import { Typography, Box, Button } from '@mui/material';
+
 
 const Productdetailcomponents = ({ product, addToCart }) => {
   return (
